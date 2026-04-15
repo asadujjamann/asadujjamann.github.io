@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Md. Asadujjaman Sabuj - Web Developer, WordPress Developer, Front End Developer">
+    <meta name="keywords" content="Asad, Web Developer, WordPress Developer, PHP, Front End Developer">
+    <title>Md. Asadujjaman Sabuj | Portfolio</title>
+    <link rel="icon" href="img/asad-logo.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#header" class="nav-logo">
+                <img src="img/asad-logo.webp" alt="Asad">
+                <span>Asad</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#header" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="header">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name">Md. Asadujjaman Sabuj</h1>
+                <h2 class="hero-roles">
+                    <span class="typed-text">Web Developer, WordPress Developer, Front End Developer</span>
+                </h2>
+                <p class="hero-description">
+                    I craft high-performance websites that convert visitors into customers.
+                    Specializing in WordPress magic, pixel-perfect frontends, and robust PHP solutions
+                    that power your digital success.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-hands-helping"></i> Hire Me
+                    </a>
+                    <a href="#portfolio" class="btn btn-secondary">
+                        <i class="fas fa-folder-open"></i> View Work
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/md-asadujjaman-sabuj" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~0187bfc383a4384ce5" target="_blank" aria-label="Upwork">
+                        <i class="fab fa-upwork"></i>
+                    </a>
+                    <a href="https://github.com/asadujjamann" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button class="scroll-indicator" onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'})">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </button>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I craft digital experiences that blend clean code with stunning design.
+                        My expertise spans WordPress development, custom theme creation, and front-end
+                        architecture that delivers seamless user experiences.
+                    </p>
+                    <p>
+                        From converting Figma designs to fully functional WordPress sites to building
+                        custom plugins and optimizing performance, I bring ideas to life with precision
+                        and creativity. Every project is an opportunity to create something extraordinary.
+                    </p>
+                    <a href="https://www.upwork.com/freelancers/~0187bfc383a4384ce5" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-hands-helping"></i> Hire Me
+                    </a>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>HTML, CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>PHP</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>WordPress Development</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="95"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2017 - 2018</span>
+                        <h3>Master Degree</h3>
+                        <h4>National University (NU)</h4>
+                        <p>
+                            I completed my post-graduation in Mathematics from National University (NU) during
+                            the 2017-2018 academic year. This advanced study deepened my analytical and
+                            problem-solving skills, which I now apply to my work in web development.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2013 - 2017</span>
+                        <h3>Bachelor Degree</h3>
+                        <h4>National University (NU)</h4>
+                        <p>
+                            I completed my graduation in Mathematics from National University (NU) between
+                            2013 and 2017. This background has provided me with a strong analytical foundation
+                            and problem-solving skills that enhance my work in web development.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2010 - 2012</span>
+                        <h3>College</h3>
+                        <h4>Domar Govt College</h4>
+                        <p>
+                            I attended Domar Govt College from 2010 to 2012, where I pursued a science
+                            background that laid a solid foundation for my technical skills.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2006 - 2010</span>
+                        <h3>High School</h3>
+                        <h4>Domar M.L. High School</h4>
+                        <p>
+                            I attended Domar M.L. High School from 2006 to 2010, where I pursued a science
+                            background, laying a strong foundation for my career as a web developer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Apr 2021 - Present</span>
+                        <h3>WordPress Developer</h3>
+                        <h4>Upwork, USA</h4>
+                        <p>
+                            I am currently working on Upwork as a WordPress Developer, collaborating with
+                            various clients to create and customize websites. My projects range from building
+                            new WordPress sites to enhancing existing ones, ensuring they meet clients' needs
+                            and expectations.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jan 2022 - Jul 2022</span>
+                        <h3>Figma to WordPress</h3>
+                        <h4>WPDesigns, United Kingdom</h4>
+                        <p>
+                            At WPDesigns, an agency I worked with through Upwork, I specialized in converting
+                            Figma designs into fully functional WordPress Elementor websites. My role involved
+                            translating design concepts into responsive and user-friendly web pages.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jan 2023 - Dec 2023</span>
+                        <h3>Trainer | WordPress Developer</h3>
+                        <h4>Codersoft It Institute, Bangladesh</h4>
+                        <p>
+                            At Codersoft IT Institute, I worked as a Trainer for WordPress Development,
+                            teaching students to build and customize WordPress sites. My training encompassed
+                            HTML, CSS, JavaScript, PHP, and WordPress.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Apr 2019 - May 2021</span>
+                        <h3>Web Developer</h3>
+                        <h4>Rafusoft, Bangladesh</h4>
+                        <p>
+                            At Rafusoft, I worked as a Website Developer, where I was responsible for designing,
+                            developing, and maintaining websites. I collaborated with clients to understand their
+                            requirements and implemented solutions using a range of technologies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>I provide expert web development services, delivering customized and innovative solutions to meet diverse client needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3>WordPress Development</h3>
+                    <p>I provide expert WordPress development services, specializing in creating, customizing, and optimizing websites to meet clients' specific needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h3>Figma to WordPress</h3>
+                    <p>I offer services in converting Figma designs to WordPress, ensuring seamless integration of design elements into functional, responsive websites.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Front-End Development</h3>
+                    <p>In addition to my WordPress expertise, I provide professional front-end development services, ensuring that websites are visually appealing, responsive, and user-friendly.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Plugin Development</h3>
+                    <p>Custom WordPress plugin development to extend your website's functionality. From simple widgets to complex integrations, I build plugins tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wordpress">WordPress Dev</button>
+                <button class="filter-btn" data-filter="frontend">Front-End Dev</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="wordpress">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio/treestar.webp" alt="TreeStar">
+                            <div class="portfolio-overlay">
+                                <a href="https://treestar.au/" target="_blank" class="portfolio-link" title="View Project">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                                <span class="portfolio-category">WordPress Development</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>TreeStar</h3>
+                            <p>Children and Teens Counseling Practice</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wordpress">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio/rentproof.webp" alt="Rentproof">
+                            <div class="portfolio-overlay">
+                                <a href="https://rentproof.co/" target="_blank" class="portfolio-link" title="View Project">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                                <span class="portfolio-category">WordPress Development</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Rentproof</h3>
+                            <p>Developing a Rental Market</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="frontend">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio/formilla.webp" alt="Formilla.com">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Front-End Development</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Formilla.com</h3>
+                            <p>Dashboard & Popup Templates</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wordpress">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio/hoem.webp" alt="Hoem">
+                            <div class="portfolio-overlay">
+                                <a href="https://hoem.co/" target="_blank" class="portfolio-link" title="View Project">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                                <span class="portfolio-category">WordPress Development</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Hoem</h3>
+                            <p>Managing rental property with ease</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wordpress">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio/northern-star.webp" alt="Northern Star Heat">
+                            <div class="portfolio-overlay">
+                                <a href="https://northernstarheat.com/" target="_blank" class="portfolio-link" title="View Project">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                                <span class="portfolio-category">WordPress Development</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Northern Star Heat</h3>
+                            <p>One-stop-shop for all heating and cooling needs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="frontend">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio/eduport.webp" alt="Eduport Bootstrap Template">
+                            <div class="portfolio-overlay">
+                                <a href="https://eduport-redesign.netlify.app/" target="_blank" class="portfolio-link" title="View Project">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                                <span class="portfolio-category">Front-End Development</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Eduport</h3>
+                            <p>Bootstrap Template Redesign</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">My Client Says</h2>
+            <div class="testimonials-container">
+                <div class="testimonials-viewport">
+                    <div class="testimonials-wrapper">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left testimonial-quote"></i>
+                            <p>
+                                Asad is awesome to work with. We will definitely requesting his help on future
+                                projects. He's fast, responsive, talented, and on time! I couldn't have asked
+                                for a better experience. Thanks again Asad!
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Tony Gilyana</h4>
+                                <span>Formilla.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left testimonial-quote"></i>
+                            <p>
+                                A very positive experience working with Asad. The project was completely well
+                                and in a timely manner. He was considerate of deadlines and always maintained
+                                professional communication. I look forward to working with Asad again.
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Danielle Verrilli</h4>
+                                <span>Treestar.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left testimonial-quote"></i>
+                            <p>
+                                Asad did a great job and completely met my needs. Great communication, finished
+                                work on time, and overall a really good experience! Looking forward to working
+                                together again! Thank you!
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Mike Flynn</h4>
+                                <span>United States</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="testimonials-nav">
+                    <button class="testimonial-prev" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonials-dots"></div>
+                    <button class="testimonial-next" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <span>Md. Asadujjaman Sabuj</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-tag"></i>
+                        <span>WordPress Developer</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:typetoasad@gmail.com">typetoasad@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+8801714946954">+8801714946954</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Rangpur Sadar, Rangpur <br> Bangladesh</span>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/md-asadujjaman-sabuj" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.upwork.com/freelancers/~0187bfc383a4384ce5" target="_blank" aria-label="Upwork">
+                            <i class="fab fa-upwork"></i>
+                        </a>
+                        <a href="https://github.com/asadujjamann" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Message</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Md. Asadujjaman Sabuj. All Rights Reserved.</p>
+                <p class="footer-credit">Developed by Asad</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
