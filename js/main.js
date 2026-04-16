@@ -2,6 +2,13 @@
 // Portfolio Website - Main JavaScript
 // ========================================
 
+// Check for thank you message from FormSubmit
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('thanks') === 'true') {
+    alert('Thank you for your message! I will get back to you soon.');
+    window.history.replaceState({}, document.title, window.location.pathname);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all modules
     ThemeToggle.init();
@@ -223,15 +230,20 @@ const ContactForm = {
     },
 
     handleSubmit(e) {
-        e.preventDefault();
+        // Let FormSubmit handle the submission
+        // Just add a visual feedback
+        const submitBtn = this.form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
 
-        const formData = new FormData(this.form);
-        const data = Object.fromEntries(formData);
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
 
-        // Here you would typically send to a backend
-        // For now, just show a success message
-        alert('Thank you for your message! I will get back to you soon.');
-        this.form.reset();
+        // FormSubmit will redirect after submission
+        // This is just a fallback in case something goes wrong
+        setTimeout(() => {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        }, 5000);
     }
 };
 
